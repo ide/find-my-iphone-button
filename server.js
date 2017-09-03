@@ -24,7 +24,7 @@ function start() {
       // The iCloud library we use is initialized by getting the devices
       await icloud.getDevicesAsync();
       const { body } = await icloud.playSoundAsync(process.env.IOS_DEVICE_ID);
-      if (body.statusCode === 200) {
+      if (body.statusCode === '200') {
         debug(`Played a sound on the device`);
       } else {
         debug(`Error playing a sound on the device:`, body);
