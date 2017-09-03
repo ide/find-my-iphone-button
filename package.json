@@ -4,6 +4,7 @@
   "description": "A server that listens to Dash Button presses and plays a loud sound on my iPhone",
   "main": "server.js",
   "scripts": {
+    "debug": "DEBUG=find-my-iphone-button node .",
     "lint": "eslint .",
     "scan": "dash-button scan",
     "start": "node ."
