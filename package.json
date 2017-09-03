@@ -1,0 +1,32 @@
+{
+  "name": "find-my-iphone-button",
+  "version": "1.0.0",
+  "description": "A server that listens to Dash Button presses and plays a loud sound on my iPhone",
+  "main": "server.js",
+  "scripts": {
+    "lint": "eslint .",
+    "scan": "dash-button scan",
+    "start": "node ."
+  },
+  "repository": {
+    "url": "git@github.com:ide/find-my-iphone-button.git",
+    "type": "git"
+  },
+  "author": "James Ide",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
+  "eslintConfig": {
+    "extends": "universe/node"
+  },
+  "dependencies": {
+    "dash-button": "^3.1.0",
+    "find-my-iphone": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.0",
+    "eslint-config-universe": "^1.0.4",
+    "prettier": "^1.6.1"
+  }
+}
